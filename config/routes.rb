@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
+  get 'pages/about'
+
+  get 'pages/contact'
+
   resources :blogs
   #resources :portafolios, except: [:show] -> quiero ver todas las rutas de portafolio excepto 'show'
   #get 'portafolio/:id', to: 'portafolios#show', as: 'portafolio_show' ->se crea nuestra propia ruta de show, ya no se ve 'portafolios/:id' sino 'portafolio/:id' sin S,ahora cambia el prefijo a portafolio_show
